@@ -6,7 +6,7 @@ from sklearn.cluster import KMeans,DBSCAN
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 #import random
-import math
+#import math
 import streamlit as st
 #%matplotlib inline
 
@@ -172,7 +172,10 @@ new_column = []                    #empty column for distance
 for index,row in pca_df.iterrows():
   lat1 = row['pc1'] #first row of location.lat column here
   lon1 = row['pc2'] #first row of location.long column here
-  value = math.dist([lat1, lon1], [pc1_player, pc2_player])  #get the distance
+  a=np.array((lat1,lon1))
+  b=np.array((pc1_player, pc2_player))
+  value= np.linalg.norm(a-b)
+  #value = math.dist([lat1, lon1], [pc1_player, pc2_player])  #get the distance
   new_column.append(value)   #append the empty list with distance values
 
 pca_df.insert(7,"Similarity score",new_column)  #7 is the index where you want to place your column. Column index starts with 0. "Distance" is the header and new_column are the values in the column.
