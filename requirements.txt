@@ -7,3 +7,4 @@ lxml==4.6.1
 highlight-text==0.2
 adjustText==0.7.3
 scikit-learn==0.24.1
+xlrd==2.0.1
