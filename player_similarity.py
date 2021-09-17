@@ -23,13 +23,13 @@ font='Arial Unicode MS'
 
 data1 = st.sidebar.file_uploader("Upload player comparison file")
 if data1 is not None:
-    df1=pd.read_excel(data1)
+    df1=pd.read_csv(data1)
 else:
     st.write("You must upload a file")
 
 data2 = st.sidebar.file_uploader("Upload file from league you'd like to compare")
 if data2 is not None:
-    df2=pd.read_excel(data2)
+    df2=pd.read_csv(data2)
 else:
     st.write("You must upload a file")
 
