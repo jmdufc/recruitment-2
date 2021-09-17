@@ -8,6 +8,7 @@ from sklearn.decomposition import PCA
 #import random
 #import math
 import streamlit as st
+import xlrd
 #%matplotlib inline
 
 st.set_page_config(
