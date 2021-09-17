@@ -1,13 +1,12 @@
 
 import pandas as pd 
-import seaborn as sns
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans,DBSCAN
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
-import random
-import math
+#import random
+#import math
 import streamlit as st
 #%matplotlib inline
 
