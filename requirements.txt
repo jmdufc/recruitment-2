@@ -1,0 +1,9 @@
+pandas==1.0.5
+numpy==1.19.0
+matplotlib==3.4.2
+streamlit==0.88.0
+mplsoccer==1.0.5
+lxml==4.6.1
+highlight-text==0.2
+adjustText==0.7.3
+scikit-learn==0.24.1
