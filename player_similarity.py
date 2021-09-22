@@ -22,6 +22,10 @@ textcolor='#343a40'
 bgcolor='#f8f9fa'
 font='Arial Unicode MS'
 
+password_guess = st.sidebar.text_input('Enter password')  
+if password_guess != 'TannadiceStreet':
+     st.stop()
+
 data1 = st.sidebar.file_uploader("Upload player comparison file")
 if data1 is not None:
      df1 = pd.read_excel(data1,engine='openpyxl')
