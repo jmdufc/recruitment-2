@@ -32,6 +32,7 @@ if data1 is not None:
     #df1=pd.read_excel(data1)
 else:
     st.write("You must upload a file")
+    st.stop()
 
 data2 = st.sidebar.file_uploader("Upload file from league you'd like to compare")
 if data2 is not None:
@@ -39,7 +40,7 @@ if data2 is not None:
     #df2=pd.read_excel(data2)
 else:
     st.write("You must upload a file")
-
+    st.stop()
 
 def add_attributes(df):
     df['Prog pass %']= df['Progressive passes per 90']/df['Passes per 90']*100
